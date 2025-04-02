@@ -26,6 +26,12 @@
     width: 100%;
   }
 
+  @media (min-width: 1320px) {
+    .container{
+      max-width: 1320px;
+    }
+  }
+
   /* Header */
   .text-nav{
     background: 0 0;
@@ -77,6 +83,13 @@
     top: 0;
     width: 100%;
     z-index: 0;
+  }
+
+  /* footer */
+  .google-maps{
+    height: 450px;
+    overflow: hidden;
+    position: relative;
   }
 
   /* Swiper */
