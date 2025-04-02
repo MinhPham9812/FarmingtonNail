@@ -1,3 +1,11 @@
-<div>
-    <!-- People find pleasure in different ways. I find it in keeping my mind clear. - Marcus Aurelius -->
-</div>
+@extends('layouts.master')
+
+@section('title', 'Gallery')
+
+@section('content')
+    @include('partials.breadcrumb', [
+        'backgroundImage' => asset('images/bg-breadcrumb.jpg'), 
+        'title' => 'Gallery',
+    ])
+    
+@endsection

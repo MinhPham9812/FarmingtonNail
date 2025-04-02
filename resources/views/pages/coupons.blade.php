@@ -1,3 +1,11 @@
-<div>
-    <!-- Breathing in, I calm body and mind. Breathing out, I smile. - Thich Nhat Hanh -->
-</div>
+@extends('layouts.master')
+
+@section('title', 'Coupons')
+
+@section('content')
+    @include('partials.breadcrumb',[
+        'backgroundImage' => asset('images/bg-breadcrumb.jpg'),
+        'title' => 'Coupons',
+    ])
+
+@endsection
