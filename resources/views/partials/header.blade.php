@@ -25,15 +25,15 @@
                         <li itemprop="name">
                             <a aria-current="{{ request()->routeIs('home') ? 'page' : 'false' }}" 
                                 href="{{ route('home') }}" 
-                                class="router-link-{{ request()->routeIs('home') ? 'active router-link-exact-active' : '' }} text-white text-nav text-[14px] font-bold uppercase font-mons {{ request()->routeIs('home') ? 'active' : '' }}" 
+                                class="text-white text-nav text-[14px] font-bold uppercase font-mons {{ request()->routeIs('home') ? 'active' : '' }}" 
                                 itemprop="url">
-                                <span itemprop="name">HOME</span>
+                                <span itemprop="name">Home</span>
                             </a>
                         </li>
                         <li itemprop="name">
                             <a aria-current="{{ request()->routeIs('about') ? 'page' : 'false' }}" 
                                 href="{{ route('about') }}" 
-                                class="router-link-{{ request()->routeIs('about') ? 'active router-link-exact-active' : '' }} text-white text-nav text-[14px] font-bold uppercase font-mons {{ request()->routeIs('about') ? 'active' : '' }}" 
+                                class="text-white text-nav text-[14px] font-bold uppercase font-mons {{ request()->routeIs('about') ? 'active' : '' }}" 
                                 itemprop="url">
                                 <span itemprop="name">About us</span>
                             </a>
@@ -41,7 +41,7 @@
                         <li itemprop="name">
                             <a aria-current="{{ request()->routeIs('services') ? 'page' : 'false' }}" 
                                 href="{{ route('services') }}" 
-                                class="router-link-{{ request()->routeIs('services') ? 'active router-link-exact-active' : '' }} text-white text-nav text-[14px] font-bold uppercase font-mons {{ request()->routeIs('services') ? 'active' : '' }}" 
+                                class="text-white text-nav text-[14px] font-bold uppercase font-mons {{ request()->routeIs('services') ? 'active' : '' }}" 
                                 itemprop="url">
                                 <span itemprop="name">Services</span>
                             </a>
@@ -49,7 +49,7 @@
                         <li itemprop="name">
                             <a aria-current="{{ request()->routeIs('coupons') ? 'page' : 'false' }}" 
                                 href="{{ route('coupons') }}" 
-                                class="router-link-{{ request()->routeIs('coupons') ? 'active router-link-exact-active' : '' }} text-white text-nav text-[14px] font-bold uppercase font-mons {{ request()->routeIs('coupons') ? 'active' : '' }}" 
+                                class="text-white text-nav text-[14px] font-bold uppercase font-mons {{ request()->routeIs('coupons') ? 'active' : '' }}" 
                                 itemprop="url">
                                 <span itemprop="name">Coupons</span>
                             </a>
@@ -61,7 +61,7 @@
                         <li itemprop="name">
                             <a aria-current="{{ request()->routeIs('booking') ? 'page' : 'false' }}" 
                                 href="{{ route('booking') }}" 
-                                class="router-link-{{ request()->routeIs('booking') ? 'active router-link-exact-active' : '' }} text-white text-nav text-[14px] font-bold uppercase font-mons {{ request()->routeIs('booking') ? 'active' : '' }}" 
+                                class="text-white text-nav text-[14px] font-bold uppercase font-mons {{ request()->routeIs('booking') ? 'active' : '' }}" 
                                 itemprop="url">
                                 <span itemprop="name">Booking</span>
                             </a>
@@ -69,7 +69,7 @@
                         <li itemprop="name">
                             <a aria-current="{{ request()->routeIs('gallery') ? 'page' : 'false' }}" 
                                 href="{{ route('gallery') }}" 
-                                class="router-link-{{ request()->routeIs('gallery') ? 'active router-link-exact-active' : '' }} text-white text-nav text-[14px] font-bold uppercase font-mons {{ request()->routeIs('gallery') ? 'active' : '' }}" 
+                                class="text-white text-nav text-[14px] font-bold uppercase font-mons {{ request()->routeIs('gallery') ? 'active' : '' }}" 
                                 itemprop="url">
                                 <span itemprop="name">Gallery</span>
                             </a>
@@ -77,7 +77,7 @@
                         <li itemprop="name">
                             <a aria-current="{{ request()->routeIs('contact') ? 'page' : 'false' }}" 
                                 href="{{ route('contact') }}" 
-                                class="router-link-{{ request()->routeIs('contact') ? 'active router-link-exact-active' : '' }} text-white text-nav text-[14px] font-bold uppercase font-mons {{ request()->routeIs('contact') ? 'active' : '' }}" 
+                                class="text-white text-nav text-[14px] font-bold uppercase font-mons {{ request()->routeIs('contact') ? 'active' : '' }}" 
                                 itemprop="url">
                                 <span itemprop="name">Contact us</span>
                             </a>
@@ -87,5 +87,4 @@
             </div>
         </div>
     </div>
-    
 </header>

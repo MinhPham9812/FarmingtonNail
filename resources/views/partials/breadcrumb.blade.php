@@ -1,19 +1,30 @@
 <!-- resources/views/partials/breadcrumb.blade.php -->
 <section class="relative overflow-hidden">
-    <div class="hero-swiper">
+    @if (request()->routeIs('home'))
+      <!-- Trang Home: Swiper với 3 hình -->
+      <div class="swiper relative">
         <div class="swiper-wrapper">
-            <div class="swiper-slide relative" style="background-image: url('{{ $backgroundImage ?? asset('images/hero-bg.jpg') }}'); background-size: cover; background-position: center; height: 60vh;">
-                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-center">
-                    <div class="container">
-                        <h3 class="text-white text-3xl md:text-5xl mb-3 font-light">{{ $subtitle ?? 'A SPA WITH A' }}</h3>
-                        <h2 class="text-white text-5xl md:text-7xl font-script">{{ $title ?? 'Lifestyle Experience' }}</h2>
-                    </div>
-                </div>
-            </div>
-            <!-- Thêm slides khác nếu cần -->
+          @foreach ($slides ?? [] as $index => $slide)
+          <div class="swiper-slide">
+            <img src="{{ $slide['image'] }}" alt="Slide {{ $index + 1 }}" class="w-full h-full object-contain object-center">
+          </div>
+          @endforeach
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next text-white"></div>
-        <div class="swiper-button-prev text-white"></div>
-    </div>
-</section>
+        <!-- Điều khiển Swiper -->
+        <div class="slider-button">
+            <span class="custom-next"></span>
+            <span class="custom-prev"></span>
+        </div>
+        <div class="dotted">
+            <div class="dotted_index"></div>
+            <div class="dotted_index"></div>
+            <div class="active_dotted_index dotted_index"></div>
+        </div>
+      </div>
+    @else
+      <!-- Các trang khác: Hình nền với tiêu đề -->
+      <div class="lg:pt-[90px] sm:pt-[40px] pt-[30px] lg:pb-[60px] sm:pb-[40px] pb-[30px] relative bg__breadcrumb z-[1] hidden-block-navigator" style="background-image: url('{{ $backgroundImage }}'); background-size: cover; background-position: center top; background-attachment: fixed;">
+        <h1 class="item__title__main relative block z-10 text-center sm:text-[75px] text-[45px] text-white font-cookie is-visible">{{ $title }}</h1>
+      </div>
+    @endif
+  </section>

@@ -5,9 +5,11 @@
 
 @section('content')
     @include('partials.breadcrumb', [
-        'backgroundImage' => asset('images/homepage2.jpg'),
-        'title' => 'Lifestyle Experience',
-        'subtitle' => 'A SPA WITH A'
+        'slides' => [
+            ['image' => asset('images/homepage1.jpg')],
+            ['image' => asset('images/homepage2.jpg')],
+            ['image' => asset('images/homepage3.jpg')],
+        ],
     ])
     
     <section class="welcome">

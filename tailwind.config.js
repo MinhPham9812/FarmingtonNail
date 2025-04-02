@@ -13,6 +13,7 @@ export default {
         extend: {
             fontFamily: {
                 'mons': ['Montserrat'],
+                'cookie': ['Cookie'],
             },
             colors: {
                 'primary': 'var(--color-primary)',

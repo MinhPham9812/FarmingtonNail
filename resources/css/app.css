@@ -10,6 +10,13 @@
   }
 }
 
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+}
+}
+
 @layer components {
   .container {
     margin-left: auto;
@@ -51,5 +58,113 @@
       #f6e27a 55%,
       #cb9b51 78%,
       var(--color-secondary) 100%);
+  }
+
+  /* Breadcrumb */
+  .item__title__main.is-visible{
+    animation-duration: 1s;
+    animation-name: zoomIn;
+    visibility: visible; /* Đảm bảo phần tử hiển thị */
+  }
+
+  .bg__breadcrumb::after{
+    background: #000000b3; 
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+  }
+
+  /* Swiper */
+  /* Navigaion for swiper */
+  .slider-button{
+    position: absolute; 
+    top:46%;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .slider-button .custom-next{
+    content: "";
+    display: inline-block;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    transition: all .5s;
+    visibility: hidden;
+    opacity: 0;
+    width: 20px;
+  }
+
+  .slider-button .custom-prev{
+    content: "";
+    display: inline-block;
+    height: 30px;
+    position: absolute;
+    left: 20px;
+    rotate: 180deg; /* Quay ngược lại để hiển thị mũi tên trái */
+    transition: all .5s;
+    visibility: hidden;
+    opacity: 0;
+    width: 20px;
+  }
+
+  .slider-button .custom-next::after, 
+  .slider-button .custom-next::before,
+  .slider-button .custom-prev::after,
+  .slider-button .custom-prev::before{
+    background-color: #fff;
+    content: "";
+    height: 50%;
+    position: absolute;
+    width: 50%;
+  }
+
+  .slider-button .custom-next::before,
+  .slider-button .custom-prev::before{
+    left: 30%;
+    top: 50%;
+    transform: skew(145deg);  /* Tạo hình dạng mũi tên */
+  }
+
+  .slider-button .custom-next::after,
+  .slider-button .custom-prev::after{
+    left: 30%;
+    top: 0;
+    transform: skew(35deg); /* Tạo hình dạng mũi tên */
+  }
+
+  .swiper:hover .custom-next,
+  .swiper:hover .custom-prev {
+  opacity: 1;
+  visibility: visible;
+  }
+
+  /* pagination */
+  .dotted{
+    position: absolute; 
+    bottom: 0;
+    height: 40px;
+    right: 50%;
+    transform: translate(50%);
+    z-index: 12;
+  }
+
+  .dotted_index{
+    border: 2px solid var(--color-primary); /* Viền ngoài */
+    border-radius: 50%; /* Bo tròn */
+    box-sizing: border-box; /* Đảm bảo padding và border tính vào kích thước */
+    cursor: pointer; /* Con trỏ chuột khi hover */
+    display: inline-block; /* Hiển thị như một phần tử inline-block */
+    height: 10px;
+    margin: 4px; /* Khoảng cách giữa các chấm */
+    width: 10px; /* Đặt kích thước cho chấm */
+  }
+
+  .dotted .active_dotted_index{
+    background-color: var(--color-primary); /* Màu nền khi active */
   }
 }

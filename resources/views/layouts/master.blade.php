@@ -6,8 +6,9 @@
     <title>@yield('title') - Farmington Nail Spa</title>
     <!-- Font Awesome cho icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <!-- Font Montserrat từ Google Fonts -->
+    <!-- Font Montserrat và Cookie từ Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Vite CSS với Tailwind -->
     @vite(['resources/css/app.css'])
     @yield('styles')
