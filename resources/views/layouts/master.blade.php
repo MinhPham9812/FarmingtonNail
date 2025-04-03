@@ -22,10 +22,6 @@
     
     @include('partials.footer')
     
-    <!-- Back to top button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 bg-primary text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300">
-        <i class="fas fa-arrow-up"></i>
-    </button>
     
     <!-- Vite JS -->
     @vite(['resources/js/app.js'])
