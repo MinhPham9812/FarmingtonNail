@@ -17,7 +17,12 @@
         </div>
     </div>
 
-    <div class="header__bottom lg:h-[92px] h-[120px] sticky top-0 lg:bg-[#101010] bg-[#232323] border-b-[2px] border-[#9f7741]">
+    <div class="header__bottom lg:h-[92px] h-[120px] sticky top-0 lg:bg-[#101010] bg-[#232323] lg:border-b-[2px] border-[#9f7741]">
+        {{-- Mobile logo --}}
+        <a href="{{ route('home') }}" class="mobile__logo lg:hidden flex items-center justify-center mr-[100px] h-[120px]" >
+            <img src="{{ asset('images/logo/header-logo.png') }}" class="max-h-[90px]" alt="">
+        </a>
+        {{-- Navbar --}}
         <div class="container lg:h-full">
             <div class="flex h-full">
                 <nav class="lg:flex hidden pr-[120px] justify-center w-full h-full" >
@@ -59,8 +64,8 @@
                 <nav class="lg:flex hidden pl-[120px] justify-center w-full h-full" >
                     <ul class="flex items-center flex-wrap">
                         <li itemprop="name">
-                            <a aria-current="{{ request()->routeIs('booking') ? 'page' : 'false' }}" 
-                                href="{{ route('booking') }}" 
+                            <a  
+                                href="https://booking.gocheckin.net/v2/18124" 
                                 class="text-white text-nav text-[14px] font-bold uppercase font-mons {{ request()->routeIs('booking') ? 'active' : '' }}" 
                                 itemprop="url">
                                 <span itemprop="name">Booking</span>

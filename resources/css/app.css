@@ -22,6 +22,10 @@
     transform: translate3d(-100%, 0, 0);
     visibility: visible;
   }
+
+  100% {
+    transform: translateZ(0);
+}
 }
 
 @keyframes slideFromLeft {
@@ -29,6 +33,10 @@
     transform: translate3d(100%, 0, 0);
     visibility: visible;
   }
+
+  100% {
+    transform: translateZ(0);
+}
 }
 
 @keyframes fadeIn{
@@ -54,6 +62,23 @@
     .container{
       max-width: 1320px;
     }
+  }
+
+  /* Logo */
+  .mobile__logo{
+    background-color: #232323;
+    background-image: url('/images/logo/topLeft.jpeg'),
+    url('/images/logo/topRight.jpeg'),
+    url('/images/logo/bottomRight.jpeg'),
+    url('/images/logo/bottomLeft.jpeg'),
+    url('/images/logo/borderSide.jpeg'),
+    url('/images/logo/borderBottom.jpeg'),
+    url('/images/logo/borderSide2.jpeg'),
+    url('/images/logo/borderBottom2.jpeg'); 
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%, 0, top, 100%, bottom; /* Vị trí các hình ảnh */
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat,repeat-y, repeat-x, repeat-y, repeat-x;
+    justify-content: center;
+    
   }
 
   /* Header */
