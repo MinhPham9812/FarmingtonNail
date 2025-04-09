@@ -28,5 +28,23 @@ document.addEventListener('DOMContentLoaded', () => {
       prevEl: '.custom-prev',
     },
   });
+  // Xử lý accordion
+  const accordions = document.querySelectorAll('.accordion');
 
+  accordions.forEach(accordion => {
+      const header = accordion.querySelector('.flex');
+      const span = accordion.querySelector('.rotate__span');
+      const content = accordion.querySelector('.span__transition');
+
+      header.addEventListener('click', () => {
+          span.classList.toggle('active');
+          if (content.classList.contains('h-0')) {
+              content.classList.remove('h-0');
+              content.classList.add('h-auto', 'py-[15px]');
+          } else {
+              content.classList.remove('h-auto', 'py-[15px]');
+              content.classList.add('h-0');
+          }
+      });
+  });
 });

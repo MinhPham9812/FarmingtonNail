@@ -157,6 +157,26 @@
     visibility: visible;
   }
 
+  /* Services */
+  .span__transition{
+    transition: all .5s ease;
+  }
+  
+  .rotate__span{
+    border-right: 2px solid #fff;
+    border-top: 2px solid #fff;
+    content: "";
+    display: inline-block;
+    height: 10px;
+    transform: rotate(135deg);
+    transition: all .5s;
+    width: 10px;
+  }
+
+  .active{
+    transform: rotate(315deg) !important;
+  }
+
   /* Coupon */
   .hover__coupon{
     transition: all .5s; /* Thêm hiệu ứng chuyển tiếp */
