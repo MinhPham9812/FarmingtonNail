@@ -18,9 +18,9 @@
                         <div class="accordion">
                             <div class="flex items-center justify-between bg-black p-[15px] cursor-pointer mb-[5px]">
                                 <h3 class="text-[21px] font-bold font-mons text-white">{{ $category }}</h3>
-                                <span class="rotate__span"></span>
+                                <span class="rotate__span {{ $activeCategory == $category ? 'active' : '' }}"></span>
                             </div>
-                            <div class="span__transition px-[15px] bg-[#f8f8f8] h-0 overflow-hidden">
+                            <div class="span__transition px-[15px] bg-[#f8f8f8] {{ $activeCategory == $category ? 'h-auto py-[15px]' : 'h-0 overflow-hidden' }}">
                                 <!-- Lặp qua từng dịch vụ trong category -->
                                 @foreach($items as $service)
                                     <div class="flex items-center justify-between mb-[15px]">
@@ -33,7 +33,7 @@
                         </div>
                     @endforeach
                 </div>
-                <img src=" {{ asset('/images/service.jpeg') }}" alt="">
+                <img src=" {{ asset('/images/' . $image) }}" alt="" class="w-full object-cover aspect-[1/1]">
             </div>
         </div>
     </section>

@@ -43,11 +43,41 @@
                 <span class="text-[15px] font-mons mb-[30px]">Fall in Love with the Art of Nails</span>
             </div>
             <div class="grid sm:grid-cols-2 md:grid-cols-3">
-                <a href="{{route('services')}}" class="px-[12px] my-[15px] cursor-pointer">
+                <a href="{{route('services')}}?category=Pedicure&image=service-1.jpg" class="px-[12px] my-[15px] cursor-pointer">
                     <div>
                         <img src="{{asset('/images/service-1.jpg')}}" alt="" class="w-full object-cover aspect-[1/1]">
                     </div>
                     <h3 class="md:text-[24px] text-[20px] font-mons text-center text-white uppercase m-auto py-[30px] px-[15px] bg-black" style="background-image: url('{{asset('/images/border-service.png')}}'); background-size: 100% 100%; background-position: center center">Pedicure</h3>
+                </a>
+                <a href="{{route('services')}}" class="px-[12px] my-[15px] cursor-pointer">
+                    <div>
+                        <img src="{{asset('/images/service-2.jpg')}}" alt="" class="w-full object-cover aspect-[1/1]">
+                    </div>
+                    <h3 class="md:text-[24px] text-[20px] font-mons text-center text-white uppercase m-auto py-[30px] px-[15px] bg-black" style="background-image: url('{{asset('/images/border-service.png')}}'); background-size: 100% 100%; background-position: center center">Manicure</h3>
+                </a>
+                <a href="{{route('services')}}" class="px-[12px] my-[15px] cursor-pointer">
+                    <div>
+                        <img src="{{asset('/images/service-3.jpg')}}" alt="" class="w-full object-cover aspect-[1/1]">
+                    </div>
+                    <h3 class="md:text-[24px] text-[20px] font-mons text-center text-white uppercase m-auto py-[30px] px-[15px] bg-black" style="background-image: url('{{asset('/images/border-service.png')}}'); background-size: 100% 100%; background-position: center center">Nails</h3>
+                </a>
+                <a href="{{route('services')}}" class="px-[12px] my-[15px] cursor-pointer">
+                    <div>
+                        <img src="{{asset('/images/service-4.jpg')}}" alt="" class="w-full object-cover aspect-[1/1]">
+                    </div>
+                    <h3 class="md:text-[24px] text-[20px] font-mons text-center text-white uppercase m-auto py-[30px] px-[15px] bg-black" style="background-image: url('{{asset('/images/border-service.png')}}'); background-size: 100% 100%; background-position: center center">Dip</h3>
+                </a>
+                <a href="{{route('services')}}" class="px-[12px] my-[15px] cursor-pointer">
+                    <div>
+                        <img src="{{asset('/images/service-5.jpg')}}" alt="" class="w-full object-cover aspect-[1/1]">
+                    </div>
+                    <h3 class="md:text-[24px] text-[20px] font-mons text-center text-white uppercase m-auto py-[30px] px-[15px] bg-black" style="background-image: url('{{asset('/images/border-service.png')}}'); background-size: 100% 100%; background-position: center center">Wax</h3>
+                </a>
+                <a href="{{route('services')}}" class="px-[12px] my-[15px] cursor-pointer">
+                    <div>
+                        <img src="{{asset('/images/service-6.jpg')}}" alt="" class="w-full object-cover aspect-[1/1]">
+                    </div>
+                    <h3 class="md:text-[24px] text-[20px] font-mons text-center text-white uppercase m-auto py-[30px] px-[15px] bg-black" style="background-image: url('{{asset('/images/border-service.png')}}'); background-size: 100% 100%; background-position: center center">Eyelash</h3>
                 </a>
             </div>
         </div>
