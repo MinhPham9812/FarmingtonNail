@@ -36,5 +36,21 @@
     </section>
     
     {{-- Service --}}
+    <section class="py-[45px]" style="background-image: url('{{asset('/images/bg-home.jpeg')}}'); background-size: cover">
+        <div class="container">
+            <div class="text-center mb-[8px]">
+                <h3 class="text-[45px] font-cookie text-[#ac8152]">Our Services</h3>
+                <span class="text-[15px] font-mons mb-[30px]">Fall in Love with the Art of Nails</span>
+            </div>
+            <div class="grid sm:grid-cols-2 md:grid-cols-3">
+                <a href="{{route('services')}}" class="px-[12px] my-[15px] cursor-pointer">
+                    <div>
+                        <img src="{{asset('/images/service-1.jpg')}}" alt="" class="w-full object-cover aspect-[1/1]">
+                    </div>
+                    <h3 class="md:text-[24px] text-[20px] font-mons text-center text-white uppercase m-auto py-[30px] px-[15px] bg-black" style="background-image: url('{{asset('/images/border-service.png')}}'); background-size: 100% 100%; background-position: center center">Pedicure</h3>
+                </a>
+            </div>
+        </div>
+    </section>
     <!-- Other sections -->
 @endsection
